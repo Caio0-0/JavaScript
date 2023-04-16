@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Brasil</h1>
+    <input type="text" name="pais" id="ipais">
+    <input type="button" value="Verificar" onclick="veri()">
+    <div id="res"></div>
+
+    <script>
+        function veri(){
+            var p = window.document.getElementById("ipais")
+            var res = window.document.querySelector("div#res")
+            var pai = p.value
+            res.innerHTML = `<p>voce mora no ${p.value}</p>`
+            if (pai !="Brasil"){
+                res.innerHTML += '<p>Você é estrangeiro</p>'
+            }else{
+                res.innerHTML += '<p>Você é Brasileito</p>'
+            }
+        }
+    </script>
+</body>
+</html>
