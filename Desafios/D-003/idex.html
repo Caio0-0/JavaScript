@@ -9,22 +9,20 @@
 </head>
 <body>
     <header>
-        <h1>Verificador de Idade</h1>
+        <h1>Vamos contar</h1>
     </header>
     <section>
         <div>
-            <p>Ano de nacimento:
-                <input type="number" name="ano" id="iano">
-                
-            </p>
-            <p>Sexo:
-                <input type="radio" name="radsex" id="masc">
-                <label for="masc">Masculino</label>
-                <input type="radio" name="radsex" id="femi">
-                <label for="femi">Feminino</label>
+            <p>
+                <label for="iInicio">Inicio</label>
+                <input type="number" name="" id="iInicio" required><br>
+                <label for="iFim">Fim</label>
+                <input type="number" name="" id="iFim" required><br>
+                <label for="iPasso">Passo </label>
+                <input type="number" name="" id="iPasso" required><br>
             </p>
             <p>
-                <input type="button" value="Verificar" onclick="verificar()">
+                <input type="button" value="contar" onclick="contar()">
             </p>
         </div>
         <div id="res">
@@ -32,7 +30,7 @@
         </div>
     </section>
     <footer>
-        <p>&copy;Caio  &RightArrow;</p>
+        <p>&copy;CaioFernando</p>
     </footer>
     <script src="script.js"></script>
 </body>
